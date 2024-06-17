@@ -1,5 +1,5 @@
-# Proyecto-PostgresSQL-Avanzado
-Proyecto PostgresSQL Avanzado
+# Proyecto-PostgreSQL-Avanzado
+Proyecto PostgreSQL Avanzado
 
 Autor: Jose Manuel Barrientos Quintero
 
