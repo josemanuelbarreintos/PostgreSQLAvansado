@@ -1,7 +1,7 @@
 # Proyecto-PostgresSQL-Avanzado
 Proyecto PostgresSQL Avanzado
 
-Autor: Edgar Vazquez Ramirez
+Autor: Jose Manuel Barrientos Quintero
 
 
 Descripcion 
