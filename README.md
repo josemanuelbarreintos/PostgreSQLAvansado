@@ -1,4 +1,4 @@
-# Proyecto-PostgreSQL-Avanzado
+# PostgreSQL-Avanzado
 Proyecto Arcos Carrreteros
 
 Autor: Jose Manuel Barrientos Quintero
@@ -34,8 +34,8 @@ Las tablas están interconectadas mediante claves foráneas para mantener la int
 
 ### Código SQL para Generar la Base de Datos
 
+```sql
 BEGIN;
-
 
 CREATE TABLE IF NOT EXISTS "Arcos".arcos
 (
@@ -118,5 +118,5 @@ ALTER TABLE IF EXISTS "Arcos".usuarios
     NOT VALID;
 
 END;
-
+```
 
