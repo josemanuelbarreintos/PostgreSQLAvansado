@@ -7,7 +7,7 @@ Autor: Jose Manuel Barrientos Quintero
 
 ### Archivo de BACKUP de la base de datos.
 
-[Descargar archivo de restauración](https://github.com/Juliodfconde/Curso_postgress/blob/main/backup/db_alertamientos26062024.sql)
+[Descargar archivo de restauración](https://github.com/josemanuelbarreintos/PostgreSQLAvansado/blob/main/DB/ArcosCarreteros.sql)
 
 ### Descripción de la Base de Datos
 
