@@ -135,6 +135,7 @@ END;
 En esta practica se realizo un rol donde se le otorgaron permisos especiales a tablas especificas de una base de datos, en la cual solo se le otorgan permisos de consulta:
 
 ![img](IMAGENES/administracionpermisos.PNG)
+Consultando la restricción:
 ![img](IMAGENES/restriccionTabla.PNG)
 
 ### Creando una copia de seguridad.
@@ -146,15 +147,15 @@ En esta practica se realizo un rol donde se le otorgaron permisos especiales a t
 
 Se realizo una consulta  a la base de datos donde se busco un dato en especifico con EXPLAIN ANALYZE obteniendo como resultado:
 
-![img](IMAGENES/explain.PNG)
+![img](IMAGENES/explain2.PNG)
 
 Se agragaron indices al campo:
 
-![img](IMAGENES/indice.PNG)
+![img](IMAGENES/indice2.PNG)
 
 Se realiza nuevamente las consulta con el comando EXPLAIN ANALYZE observando los cambios en tiempos:
 
-![img](IMAGENES/indiceExplain.PNG)
+![img](IMAGENES/indiceExplain2.PNG)
 
 
 ## Gracias por su atencion
