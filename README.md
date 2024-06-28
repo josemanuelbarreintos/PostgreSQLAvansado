@@ -5,7 +5,7 @@ Autor: Jose Manuel Barrientos Quintero
 
 ### Obtencion de datos
 
-Los tatos se obtuvieron de la [pagina](https://www.mockaroo.com/), la pagina permite descargar datos de acuerdo a las necesidades de tus tablas.
+Los tatos se obtuvieron de la [pagina](https://www.mockaroo.com/), el sitio permite descargar datos de acuerdo a las necesidades de tus tablas.
 
 ![img](IMAGENES/mockaroo.PNG)
 
@@ -130,6 +130,15 @@ ALTER TABLE IF EXISTS "Arcos".usuarios
 
 END;
 ```
+
+### Archivos para cargar en la base.
+
+Consultar los datos:
+[Usuarios](DATOS_CSV/usuario.csv) 
+[Personas](DATOS_CSV/persona.csv) 
+[Reportes de arcos](DATOS_CSV/Downloads/reporte.csv) 
+[Arcos](DATOS_CSV/Downloads/arcos.csv)
+
 ### Gestion de usuarios.
 
 En esta practica se realizo un rol donde se le otorgaron permisos especiales a tablas especificas de una base de datos, en la cual solo se le otorgan permisos de consulta:
