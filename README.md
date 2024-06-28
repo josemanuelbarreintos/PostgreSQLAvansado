@@ -3,15 +3,26 @@ Proyecto Arcos Carrreteros
 
 Autor: Jose Manuel Barrientos Quintero
 
+### Obtencion de datos
 
+Los tatos se obtuvieron de la [pagina](https://www.mockaroo.com/), la pagina permite descargar datos de acuerdo a las necesidades de tus tablas.
 
-### Archivo de BACKUP de la base de datos.
+![img](IMAGENES/mockaroo.PNG)
 
-[Descargar archivo de restauración](https://github.com/josemanuelbarreintos/PostgreSQLAvansado/blob/main/DB/ArcosCarreteros.sql)
+### Configuración del entorno SQL
+ 
+Creacion de un servidor en pgAdmin4:
+![img](IMAGENES/servidor.PNG)
+
+Creación de base de datos:
+![img](IMAGENES/creacionDB.PNG)
 
 ### Descripción de la Base de Datos
 
 La base de datos del sistema de Arcos Carreteros está diseñada para registrar y monitorear tanto los arcos carreteros instalados en las carreteras del territorio Mexicano como el monitoreo de su forma de operar,facilita el seguimiento de automoviles los cuales estan involucrados en algun acontesimiento delictivo mediante un sistema organizado de tablas y relaciones. como a continuación se describen:
+
+
+### Diseño de la base de datos
 
 1. *Tabla cat_estatus*: Contiene dos posibles datos hacerca de un estatus que se utilizara en alguna tabla.
 2. *Tabla tbl_registro_arcos*: Contiene los registros de las lecturas que recolecta el arco carretero en su operacion.
@@ -119,4 +130,31 @@ ALTER TABLE IF EXISTS "Arcos".usuarios
 
 END;
 ```
+### Gestion de usuarios.
 
+En esta practica se realizo un rol donde se le otorgaron permisos especiales a tablas especificas de una base de datos, en la cual solo se le otorgan permisos de consulta:
+
+![img](IMAGENES/administracionpermisos.PNG)
+![img](IMAGENES/restriccionTabla.PNG)
+
+### Creando una copia de seguridad.
+
+ Archivo de BACKUP de la base de datos:
+[Descargar archivo de restauración](https://github.com/josemanuelbarreintos/PostgreSQLAvansado/blob/main/DB/ArcosCarreteros.sql)
+
+### Optimizando consultas:
+
+Se realizo una consulta  a la base de datos donde se busco un dato en especifico con EXPLAIN ANALYZE obteniendo como resultado:
+
+![img](IMAGENES/explain.PNG)
+
+Se agragaron indices al campo:
+
+![img](IMAGENES/indice.PNG)
+
+Se realiza nuevamente las consulta con el comando EXPLAIN ANALYZE observando los cambios en tiempos:
+
+![img](IMAGENES/indiceExplain.PNG)
+
+
+## Gracias por su atencion
