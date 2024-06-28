@@ -134,10 +134,14 @@ END;
 ### Archivos para cargar en la base.
 
 Consultar los datos:
-[Usuarios](DATOS_CSV/usuario.csv) 
-[Personas](DATOS_CSV/persona.csv) 
-[Reportes de arcos](DATOS_CSV/Downloads/reporte.csv) 
-[Arcos](DATOS_CSV/Downloads/arcos.csv)
+Usuarios
+[Archivo](DATOS_CSV/usuario.csv) 
+Personas
+[Archivo](DATOS_CSV/persona.csv) 
+Reportes carreteros
+[Archivo](DATOS_CSV/Downloads/reporte.csv) 
+Arcos
+[Archivo](DATOS_CSV/Downloads/arcos.csv)
 
 ### Gestion de usuarios.
 
@@ -156,15 +160,57 @@ Consultando la restricción:
 
 Se realizo una consulta  a la base de datos donde se busco un dato en especifico con EXPLAIN ANALYZE obteniendo como resultado:
 
-![img](IMAGENES/explain2.PNG)
+![img](IMAGENES/explain3.PNG)
 
 Se agragaron indices al campo:
 
-![img](IMAGENES/indice2.PNG)
+![img](IMAGENES/indice.PNG)
 
 Se realiza nuevamente las consulta con el comando EXPLAIN ANALYZE observando los cambios en tiempos:
 
-![img](IMAGENES/indiceExplain2.PNG)
+![img](IMAGENES/indiceExplain3.PNG)
 
+
+### Ejemplo de consultas:
+
+Consulta con COUNT y GROUP BY:
+![img](IMAGENES/count.PNG)
+
+Consulta con DISTINCT y ORDER BY:
+![img](IMAGENES/distintos.PNG)
+
+Consulta con JOIN, ORDER BY y WHERE:
+![img](IMAGENES/compuesta.PNG)
+
+## Optimización de Rendimiento y Consultas
+
+Manejo de transacciones:
+las transacciones se pueden aplicar en mi proyecto a la hora de realizar movimientos en las tablas, para poder asegurar que el proceso sea completado.
+
+Ejemplo:
+transaccion con exito.
+![img](IMAGENES/transaccion.PNG)
+
+Datos actualizado.
+![img](IMAGENES/transaccion.PNG)
+
+Transaccion fallida, sin agregar el COMMIT.
+![img](IMAGENES/transaccionfalla.PNG)
+
+
+## Monitoreo y Mantenimiento Proactivo
+
+pg_stat:
+Lo podemos utilizar para ver quien realiza movimientos en la base de datos.
+Ejemplo:
+pg_stat_activity
+![img](IMAGENES/pg_stat_activity.PNG)
+pg_stat_database
+![img](IMAGENES/pg_stat_database.PNG)
+
+## Actualizaciones y Migraciones en PostgreSQL
+
+Mantener PostgreSQL actualizado en cuanto a versiones y actualizaciones de manejadores.
+gestionar respaldos y migraciones constante mente para evitar perdidas de información.
 
 ## Gracias por su atencion
